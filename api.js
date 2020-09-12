@@ -9,7 +9,7 @@ const app = new Koa();
 app.use(body());
 app.use((ctx) => {
   var ip = ctx.request.headers["x-real-ip"] || ctx.request.headers['x-forwarded-for'] || ctx.request.ip;
-  const q = {}
+  const q = ctx.request.query;
   if (ip) {
     ip = ip.split(".");
     ip[0] = "**";
