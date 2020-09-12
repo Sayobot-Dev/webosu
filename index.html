@@ -196,7 +196,7 @@
             function refreshLivescore(){
                 let xhr = new XMLHttpRequest();
                 xhr.responseType = 'text';
-                xhr.open("GET", "http://api.osugame.online/fetch/");
+                xhr.open("GET", "/fetch/");
                 xhr.onload = function() {
                     showActivity(JSON.parse(xhr.response));
                 }

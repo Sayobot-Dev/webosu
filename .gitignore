@@ -4,3 +4,5 @@ env.sh
 defaultskin
 lazerskin
 tests
+node_modules
+dist/
